@@ -1,3 +1,0 @@
-MAPBOX_KEY=pk.eyJ1IjoieHhhdmllcmNhc3RpbGxvIiwiYSI6ImNsdXBwc3loMTF5NzQyam13Z3M5NHduazcifQ.rhLWhKAuu7S1s3K7OpbHlw
-
-https://api.mapbox.com/geocoding/v5/mapbox.places/soacha.json?language=es&access_token=pk.eyJ1IjoieHhhdmllcmNhc3RpbGxvIiwiYSI6ImNsdXBwbHNveDFmaDUyam8ydWIwZWpyajYifQ.Z7Pg-F5O7l6wJEhCrci1pg

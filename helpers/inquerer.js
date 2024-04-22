@@ -93,13 +93,13 @@ const readInput = async (message) => {
  crea una lista de opciones para que el usuario seleccione. El usuario puede elegir una tarea para eliminar.
  @returns La función `listTasksDelete` devuelve el `id` de la tarea seleccionada que se eliminará.
  */
-const listTasksDelete = async (tareas = []) => {
-    const choices = tareas.map((tarea, i) => {
+const listPlaces = async (pleaces = []) => {
+    const choices = pleaces.map((pleace, i) => {
         const idx = `${i + 1}. `.green;
 
         return {
-            value: tarea.id,
-            name: `${idx} ${tarea.desc}`,
+            value: pleace.id,
+            name: `${idx} ${pleace.name}`,
         };
     });
 
@@ -108,16 +108,16 @@ const listTasksDelete = async (tareas = []) => {
         name: "0.".green + " Cancelar",
     });
 
-    const preguntas = [
+    const questions = [
         {
             type: "list",
             name: "id",
-            message: "borrar",
+            message: "Selecione Lugar: ",
             choices,
         },
     ];
 
-    const { id } = await inquirer.prompt(preguntas);
+    const { id } = await inquirer.prompt(questions);
     return id;
 };
 
@@ -178,7 +178,7 @@ module.exports = {
     inquirerMenu,
     pause,
     readInput,
-    listTasksDelete,
+    listPlaces,
     confirmDelete,
     showListChecclist,
 };
